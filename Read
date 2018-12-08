@@ -1,0 +1,32 @@
+"""
+使用此方法的的前提是你的电脑上要有一块能够支持GPU运算的独显
+使用此方法的的前提是你的电脑上要有一块能够支持GPU运算的独显
+使用此方法的的前提是你的电脑上要有一块能够支持GPU运算的独显
+"""
+
+
+# Step1
+  安装 Anaconda ： 1）下载  2）安装（无脑下一步就好，两个复选框可以都勾选） 
+  
+# Step2
+  打开 Anaconda ： 1）修改源 2）新建一个Py3.6的环境  3）打开环境
+  
+# Step3
+  P.s：因为我觉得这个方法很神奇，所以把环境名字取为了：immortal   进入环境后
+  1）conda install -c aaronzs tensorflow-gpu
+  2) conda install -c anaconda cudatoolkit
+  3) conda install -c anaconda cudnn
+  按步执行，一直选择 yes,最后就会出现Successful Install
+  
+ #Step4 验证 
+  在该环境下输入 
+  1）python
+  2）import tensorflow as tf
+  3）hello = tf.constant("Hello Tensorflow")
+  4) session = tf.Session()
+  5) =====================================
+                  耐心等待
+  6）=====================================
+  7）print('session.run(hello)')
+  
+  若显示正常，即可放心使用~~~~~
